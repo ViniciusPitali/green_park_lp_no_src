@@ -110,9 +110,7 @@ export default function Home() {
         </div>
         <p className="text-lg text-gray-700">Próximo ao Shopping Diadema, Parque do Paço, Rodovia dos Imigrantes e muito mais.</p>
       </section>
-    </main>
-  );
-}
+
 {/* Conditions Section */}
       <section id="conditions" className="w-full py-16 px-4 bg-green-700 text-white text-center">
         <h2 className="text-3xl font-bold mb-8">Condições Facilitadas Para Você Sair do Aluguel!</h2>
