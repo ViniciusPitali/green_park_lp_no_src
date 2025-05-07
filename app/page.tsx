@@ -111,7 +111,6 @@ export default function Home() {
         <p className="text-lg text-gray-700">Próximo ao Shopping Diadema, Parque do Paço, Rodovia dos Imigrantes e muito mais.</p>
       </section>
 
-{/* Conditions Section */}
       <section id="conditions" className="w-full py-16 px-4 bg-green-700 text-white text-center">
         <h2 className="text-3xl font-bold mb-8">Condições Facilitadas Para Você Sair do Aluguel!</h2>
         <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
@@ -131,7 +130,6 @@ export default function Home() {
         <Button className="bg-white text-green-700 hover:bg-gray-100 text-lg py-3 px-6">Faça uma Simulação Gratuita</Button>
       </section>
 
-      {/* Developer Section */}
       <section id="developer" className="w-full py-16 px-4 text-center bg-gray-50">
         <h2 className="text-3xl font-bold mb-12">Realização: Versati Incorporadora</h2>
         <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-center gap-10">
@@ -146,21 +144,18 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Final CTA Section */}
       <section className="w-full py-16 px-4 text-center">
-         <h2 className="text-3xl font-bold mb-8">Gostou do Green Park?</h2>
-         <p className="text-xl text-gray-700 mb-8">Não perca tempo! Agende sua visita ao decorado e descubra seu novo lar.</p>
-         <Button className="bg-green-600 hover:bg-green-700 text-white text-lg py-3 px-8">Agende Sua Visita Agora</Button>
+        <h2 className="text-3xl font-bold mb-8">Gostou do Green Park?</h2>
+        <p className="text-xl text-gray-700 mb-8">Não perca tempo! Agende sua visita ao decorado e descubra seu novo lar.</p>
+        <Button className="bg-green-600 hover:bg-green-700 text-white text-lg py-3 px-8">Agende Sua Visita Agora</Button>
       </section>
 
-      {/* Footer */}
       <footer className="w-full py-8 px-4 bg-gray-800 text-gray-300 text-center text-sm">
         <p className="mb-2">Green Park Residence - Incorporação registrada sob o nº XX na matrícula nº XXXX do Cartório de Registro de Imóveis de Diadema/SP.</p>
         <p className="mb-2">Imagens meramente ilustrativas. Móveis, objetos de decoração, pisos e acabamentos são sugestões e não fazem parte do contrato. As áreas comuns serão entregues equipadas e decoradas conforme memorial descritivo.</p>
         <p className="mb-4">Versati Incorporadora e Construtora LTDA - CNPJ XX.XXX.XXX/XXXX-XX.</p>
         <p>&copy; 2025 Green Park Residence. Todos os direitos reservados. | <a href="#" className="underline">Política de Privacidade</a></p>
       </footer>
-
     </main>
   );
 }
