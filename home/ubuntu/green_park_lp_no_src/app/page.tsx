@@ -68,12 +68,12 @@ export default function Home() {
         <h2 className="text-3xl font-bold mb-12">Conheça as Plantas Inteligentes</h2>
         <div className="flex flex-col md:flex-row justify-center items-center gap-10 max-w-6xl mx-auto">
           <div className="w-full md:w-1/2 p-4 border rounded-lg shadow-sm">
-            <div className="bg-gray-200 h-64 mb-4 flex items-center justify-center text-gray-500">Planta 43,01m² Placeholder</div>
+            <img src="/images/plantas/planta-43.jpg" alt="Planta 43,01m²" className="rounded-lg shadow-md mb-4 w-full h-64 object-cover" />
             <h3 className="text-xl font-semibold">Planta 43,01m²</h3>
             <p className="text-gray-600">2 Dormitórios, Varanda, Cozinha, Sala de Estar/Jantar, Banheiro, Área de Serviço.</p>
           </div>
           <div className="w-full md:w-1/2 p-4 border rounded-lg shadow-sm">
-            <div className="bg-gray-200 h-64 mb-4 flex items-center justify-center text-gray-500">Planta 45,82m² Placeholder</div>
+            <img src="/images/plantas/planta-45.jpg" alt="Planta 43,01m²" className="rounded-lg shadow-md mb-4 w-full h-64 object-cover" />
             <h3 className="text-xl font-semibold">Planta 45,82m²</h3>
             <p className="text-gray-600">2 Dormitórios, Varanda, Cozinha, Sala de Estar/Jantar, Banheiro, Área de Serviço, Home Office.</p>
           </div>
@@ -83,15 +83,30 @@ export default function Home() {
       <section id="gallery" className="w-full py-16 px-4 bg-gray-50 text-center">
         <h2 className="text-3xl font-bold mb-12">Galeria de Imagens</h2>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
-          {Array(8).fill(null).map((_, i) => (
-            <div key={i} className="bg-gray-200 h-48 rounded-lg flex items-center justify-center text-gray-500">Imagem {i + 1}</div>
-          ))}
+          {[...Array(8)].map((_, i) => (
+  <img
+    key={i}
+    src={`/images/galeria/galeria-${i + 1}.jpg`}
+    alt={`Imagem ${i + 1}`}
+    className="rounded-lg object-cover h-48 w-full"
+  />
+))}
         </div>
       </section>
 
       <section id="location" className="w-full py-16 px-4 text-center">
         <h2 className="text-3xl font-bold mb-12">Localização Privilegiada na Vila Conceição</h2>
-        <div className="max-w-4xl mx-auto bg-gray-200 h-80 rounded-lg flex items-center justify-center text-gray-500 mb-6">Mapa Placeholder (Av Dom Pedro I, 1317)</div>
+        <div className="max-w-4xl mx-auto mb-6">
+  <iframe
+    src="<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.5215269097835!2d-46.611385723784615!3d-23.693063066445628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce446194f1d295%3A0xfd4ad7ba539703c5!2sGREEN%20PARK%20RESIDENCE%20-%20Av.%20Dom%20Pedro%20I%2C%201317%20-%20Concei%C3%A7%C3%A3o%2C%20Diadema%20-%20SP%2C%2009991-000!5e0!3m2!1spt-BR!2sbr!4v1746655946084!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
+    width="100%"
+    height="320"
+    className="rounded-lg border-0 w-full"
+    allowFullScreen
+    loading="lazy"
+    referrerPolicy="no-referrer-when-downgrade"
+  />
+</div>
         <p className="text-lg text-gray-700">Próximo ao Shopping Diadema, Parque do Paço, Rodovia dos Imigrantes e muito mais.</p>
       </section>
 
